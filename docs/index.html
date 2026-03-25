@@ -629,50 +629,21 @@ button{cursor:pointer;font-family:inherit}
 
   function toKorean(name) {
     if (!name) return '';
+    // 괄호 제거: "Yongin-si (Cheoin-gu)" → "Yongin-si"
+    name = name.replace(/\s*\(.*\)/, '').trim();
     // 이미 한글이면 그대로
     if (/[가-힣]/.test(name)) return name;
     return cityMap[name] || cityMap[name.replace(/-si$/,'')] || name;
   }
 
-  // IP 위치 감지 - 다중 방식
-  var found = false;
-
-  // 방법1: fetch (웹서버 배포 시 작동)
-  fetch('https://ipwho.is/')
+  // IP 위치 감지 - geojs.io (HTTPS + CORS 허용)
+  fetch('https://get.geojs.io/v1/ip/geo.json')
     .then(function(r){ return r.json(); })
     .then(function(d){
-      if (!found && d.success) {
-        found = true;
-        var area = toKorean(d.city||'') || toKorean(d.region||'');
-        if (area) setLocation(area); else fallback();
-      }
-    }).catch(function(){});
-
-  fetch('https://ipapi.co/json/')
-    .then(function(r){ return r.json(); })
-    .then(function(d){
-      if (!found) {
-        found = true;
-        var area = toKorean(d.city||'') || toKorean(d.region||'');
-        if (area) setLocation(area); else fallback();
-      }
-    }).catch(function(){});
-
-  // 방법2: script 태그 (file:// 에서도 작동)
-  window._geoResp = function(data) {
-    if (!found) {
-      found = true;
-      var area = toKorean(data.city||'') || toKorean(data.regionName||'');
+      var area = toKorean(d.city||'') || toKorean(d.region||'');
       if (area) setLocation(area); else fallback();
-    }
-  };
-  var sc = document.createElement('script');
-  sc.src = 'http://ip-api.com/json/?fields=status,city,regionName&callback=_geoResp';
-  sc.onerror = function(){ if(!found){ found=true; fallback(); } };
-  document.head.appendChild(sc);
-
-  // 5초 타임아웃
-  setTimeout(function(){ if(!found){ found=true; fallback(); } }, 5000);
+    })
+    .catch(function(){ fallback(); });
 })();
 
 // ===== 폼 제출 → ntfy 푸시 알림 =====
