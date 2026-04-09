@@ -196,7 +196,7 @@ function renderSeoPage(page, relatedLinks, titleOverride) {
   <script>
     (function () {
       var links = document.querySelectorAll('.js-call-cta');
-      var GA_ID = 'G-XXXXXXXXXX';
+      var GA_ID = 'G-LYP8WVVCQY';
       function trackCallClick(data) {
         if (typeof window.gtag === 'function') {
           window.gtag('event', 'call_click', data);
