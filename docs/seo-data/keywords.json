@@ -1,0 +1,9 @@
+{
+  "services": [
+    { "slug": "drain-blocked", "label": "하수구막힘" },
+    { "slug": "toilet-blocked", "label": "변기막힘" },
+    { "slug": "sink-blocked", "label": "싱크대막힘" },
+    { "slug": "sewer-cleaning", "label": "고압세척" },
+    { "slug": "backflow", "label": "역류" }
+  ]
+}

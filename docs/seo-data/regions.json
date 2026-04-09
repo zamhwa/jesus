@@ -1,0 +1,39 @@
+{
+  "yongin": {
+    "label": "용인",
+    "districts": {
+      "cheoin": { "label": "처인구" },
+      "giheung": { "label": "기흥구" },
+      "suji": { "label": "수지구" }
+    }
+  },
+  "suwon": {
+    "label": "수원",
+    "districts": {
+      "jangan": { "label": "장안구" },
+      "gwonseon": { "label": "권선구" },
+      "paldal": { "label": "팔달구" },
+      "yeongtong": { "label": "영통구" }
+    }
+  },
+  "incheon": {
+    "label": "인천",
+    "districts": {
+      "namdong": { "label": "남동구" },
+      "bupyeong": { "label": "부평구" },
+      "yeonsu": { "label": "연수구" },
+      "michuhol": { "label": "미추홀구" },
+      "seo": { "label": "서구" }
+    }
+  },
+  "seoul": {
+    "label": "서울",
+    "districts": {
+      "gangnam": { "label": "강남구" },
+      "seocho": { "label": "서초구" },
+      "songpa": { "label": "송파구" },
+      "gangbuk": { "label": "강북구" },
+      "mapo": { "label": "마포구" }
+    }
+  }
+}

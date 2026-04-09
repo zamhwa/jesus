@@ -1,0 +1,8 @@
+{
+  "name": "jesus-seo-generator",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "generate:seo": "node scripts/generate-seo-pages.mjs"
+  }
+}
