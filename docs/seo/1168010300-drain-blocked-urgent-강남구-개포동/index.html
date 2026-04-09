@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>강남구 개포동 하수구 막힘 긴급 전문 업체 | 당일 방문 가능</title>
+  <title>강남구 개포동 하수구 막힘 긴급 | 30분 출동 24시간 상담</title>
   <meta name="description" content="강남구 개포동 하수구 막힘 긴급 출동 문의 대응. 원인 진단부터 재발 방지까지 현장 맞춤으로 처리합니다.">
   <link rel="canonical" href="https://drainkorea.com/seo/1168010300-drain-blocked-urgent-강남구-개포동/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="강남구 개포동 하수구 막힘 긴급 전문 업체 | 당일 방문 가능">
+  <meta property="og:title" content="강남구 개포동 하수구 막힘 긴급 | 30분 출동 24시간 상담">
   <meta property="og:description" content="강남구 개포동 하수구 막힘 긴급 출동 문의 대응. 원인 진단부터 재발 방지까지 현장 맞춤으로 처리합니다.">
   <meta property="og:url" content="https://drainkorea.com/seo/1168010300-drain-blocked-urgent-강남구-개포동/">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"강남구 개포동 배관 긴급 출동","areaServed":"강남구 개포동","description":"강남구 개포동 하수구 막힘 긴급 출동 문의 대응. 원인 진단부터 재발 방지까지 현장 맞춤으로 처리합니다.","telephone":"010-4406-1788","url":"https://drainkorea.com/seo/1168010300-drain-blocked-urgent-강남구-개포동/"}</script>
@@ -46,7 +46,7 @@
   <section class="card">
     <h2>CTA</h2>
     <p>강남구 개포동 하수구 막힘 문의는 접수 즉시 기사 배차를 시작합니다.</p>
-    <a class="cta" href="tel:01044061788">전화 상담 010-4406-1788</a>
+    <a class="cta js-call-cta" data-region="강남구 개포동" data-service="하수구 막힘" data-intent="긴급 출동" href="tel:01044061788">전화 상담 010-4406-1788</a>
   </section>
 
   <section class="card">
@@ -63,5 +63,38 @@
     <a href="/blog/">배관 관리 블로그 보기</a>
     <a href="/">메인 페이지 이동</a>
   </section>
+  <script>
+    (function () {
+      var links = document.querySelectorAll('.js-call-cta');
+      var GA_ID = 'G-XXXXXXXXXX';
+      function trackCallClick(data) {
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'call_click', data);
+        }
+      }
+      if (GA_ID && !window.__gaBooted) {
+        window.__gaBooted = true;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer.push(arguments);}
+        window.gtag = window.gtag || gtag;
+        gtag('js', new Date());
+        gtag('config', GA_ID);
+      }
+      links.forEach(function (link) {
+        link.addEventListener('click', function () {
+          trackCallClick({
+            region: link.getAttribute('data-region') || '',
+            service: link.getAttribute('data-service') || '',
+            intent: link.getAttribute('data-intent') || '',
+            page_path: location.pathname
+          });
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

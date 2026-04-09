@@ -7,9 +7,3 @@ try {
 } catch {
   Write-Output "publish:seo1000 failed: $($_.Exception.Message)"
 }
-
-try {
-  npm run publish:winners
-} catch {
-  Write-Output "publish:winners failed: $($_.Exception.Message)"
-}

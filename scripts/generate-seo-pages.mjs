@@ -176,7 +176,7 @@ function renderSeoPage(page, relatedLinks, titleOverride) {
   <section class="card">
     <h2>CTA</h2>
     <p>${regionTerm} ${serviceKeyword} 문의는 접수 즉시 기사 배차를 시작합니다.</p>
-    <a class="cta" href="tel:${phone.replaceAll("-", "")}">전화 상담 ${phone}</a>
+    <a class="cta js-call-cta" data-region="${regionTerm}" data-service="${serviceKeyword}" data-intent="${intentKeyword}" href="tel:${phone.replaceAll("-", "")}">전화 상담 ${phone}</a>
   </section>
 
   <section class="card">
@@ -193,6 +193,39 @@ function renderSeoPage(page, relatedLinks, titleOverride) {
     <a href="/blog/">배관 관리 블로그 보기</a>
     <a href="/">메인 페이지 이동</a>
   </section>
+  <script>
+    (function () {
+      var links = document.querySelectorAll('.js-call-cta');
+      var GA_ID = 'G-XXXXXXXXXX';
+      function trackCallClick(data) {
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'call_click', data);
+        }
+      }
+      if (GA_ID && !window.__gaBooted) {
+        window.__gaBooted = true;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer.push(arguments);}
+        window.gtag = window.gtag || gtag;
+        gtag('js', new Date());
+        gtag('config', GA_ID);
+      }
+      links.forEach(function (link) {
+        link.addEventListener('click', function () {
+          trackCallClick({
+            region: link.getAttribute('data-region') || '',
+            service: link.getAttribute('data-service') || '',
+            intent: link.getAttribute('data-intent') || '',
+            page_path: location.pathname
+          });
+        });
+      });
+    })();
+  </script>
 </body>
 </html>`;
 }

@@ -7,9 +7,12 @@
     "generate:seo1000": "node scripts/generate-seo-pages.mjs",
     "generate:backlink": "node scripts/generate-backlink-assets.mjs",
     "apply:winners": "node scripts/apply-winning-titles.mjs",
+    "optimize:weekly": "node scripts/weekly-optimize-from-gsc.mjs",
     "publish:auto": "node scripts/auto-upload.mjs",
     "publish:seo1000": "npm run generate:seo1000 && npm run publish:auto",
     "publish:winners": "npm run apply:winners && npm run publish:auto",
-    "publish:backlink": "npm run generate:backlink && npm run publish:auto"
+    "publish:backlink": "npm run generate:backlink && npm run publish:auto",
+    "publish:weekly": "npm run optimize:weekly && npm run publish:auto",
+    "schedule:register": "powershell -ExecutionPolicy Bypass -File scripts/register-schedules.ps1"
   }
 }
