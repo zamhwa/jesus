@@ -17437,4 +17437,104 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://drainkorea.com/blog/apatu-hasugu-yeogru/</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://drainkorea.com/blog/apatu-hasugu-yeogru/img1.jpg</image:loc>
+      <image:title>아파트 하수구 역류 원인과 대처법 - 층간 문제 해결</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://drainkorea.com/blog/baegwan-donggyeol-eunggeub/</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://drainkorea.com/blog/baegwan-donggyeol-eunggeub/img1.jpg</image:loc>
+      <image:title>배관 동결 시 응급 대처법 - 겨울철 필수 가이드</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://drainkorea.com/blog/biyong-jeoryeomhan-baegwan-gwanri/</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://drainkorea.com/blog/biyong-jeoryeomhan-baegwan-gwanri/img1.jpg</image:loc>
+      <image:title>배관 관리 비용 절약하는 7가지 실전 팁</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://drainkorea.com/blog/hwajangsil-byeongi-mulnaeryeom/</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://drainkorea.com/blog/hwajangsil-byeongi-mulnaeryeom/img1.jpg</image:loc>
+      <image:title>화장실 변기 물내림 약할 때 원인과 해결법</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://drainkorea.com/blog/jibap-hasugu-naemse-haegyeol/</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://drainkorea.com/blog/jibap-hasugu-naemse-haegyeol/img1.jpg</image:loc>
+      <image:title>집안 하수구 냄새 완벽 해결 - 원인별 맞춤 대처법</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://drainkorea.com/blog/okstang-bangsu-baesugwan/</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://drainkorea.com/blog/okstang-bangsu-baesugwan/img1.jpg</image:loc>
+      <image:title>옥상 방수와 배수관 관리 - 누수 예방 필수 점검</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://drainkorea.com/blog/orae-doen-jip-baegwan-gyoche/</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://drainkorea.com/blog/orae-doen-jip-baegwan-gyoche/img1.jpg</image:loc>
+      <image:title>오래된 집 배관 교체 시기와 비용 가이드</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://drainkorea.com/blog/sangeopgeonmul-baegwan-jeomgeom/</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://drainkorea.com/blog/sangeopgeonmul-baegwan-jeomgeom/img1.jpg</image:loc>
+      <image:title>상업건물 배관 정기점검의 중요성과 점검 항목</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://drainkorea.com/blog/singkeudae-baesubu-makhin/</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://drainkorea.com/blog/singkeudae-baesubu-makhin/img1.jpg</image:loc>
+      <image:title>싱크대 배수구 막힘 - 원인별 해결법과 예방 관리</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://drainkorea.com/blog/upso-geuriseuteulaeb-gwanri/</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://drainkorea.com/blog/upso-geuriseuteulaeb-gwanri/img1.jpg</image:loc>
+      <image:title>음식점 그리스트랩 청소 주기와 관리법 완벽 가이드</image:title>
+    </image:image>
+  </url>
 </urlset>
