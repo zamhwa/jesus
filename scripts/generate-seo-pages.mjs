@@ -6,11 +6,11 @@ const docsDir = path.join(rootDir, "docs");
 const siteUrl = "https://drainkorea.com";
 const phone = "010-4406-1788";
 
-const seoPageInitial = 1000;
-const blogPostInitial = 120;
-const seoGrowPerRun = 30;
-const blogGrowPerRun = 6;
-const abTestTopLimit = 100;
+const seoPageInitial = 50000;
+const blogPostInitial = 300;
+const seoGrowPerRun = 50000;
+const blogGrowPerRun = 300;
+const abTestTopLimit = 200;
 const growthStatePath = path.join(docsDir, ".growth-state.json");
 
 const services = [
